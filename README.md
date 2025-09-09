@@ -11,9 +11,9 @@ Este item tem como objetivo descrever como criar uma máquina virtual no Azure a
 ## Criar uma Máquina Virtual do Azure via Portal
 - Acesse o [portal do Azure](https://portal.azure.com/)
 - Informe seus dados de acesso.
-- No menu lateral localize e clique em `Máquinas Virtuais` conforme imagem ![Menu do Azure](/images/menu.png). Obs.: o menu pode mudar com as atualizações.
+- No menu lateral localize e clique em `Máquinas Virtuais` conforme imagem [Menu do Azure](/images/menu.png). Obs.: o menu pode mudar com as atualizações.
 - Na próxima tela clique em `Criar` e escolha `Máquina virtual`
-- Informe os dados solicitados conforme necessidade de recursos para o projeto ![detalhes de implantação](/images/detalhe.png).
+- Informe os dados solicitados conforme necessidade de recursos para o projeto [detalhes de implantação](/images/detalhe.png).
 - Avance para os próximos passos para configurar discos, rede, gerenciamento e monitoramento.
 - No passo final revise e clique em `Criar` e aguarde ser provisionado.
 
@@ -29,7 +29,7 @@ Este item tem como objetivo descrever como criar uma máquina virtual no Azure a
 2. Informe seus dados de acesso.
 3. Localize `SQL do Azure` no menu lateral esquerdo, se não estiver visivel clique em `Todos os Serviços` e digite na barra de pesquisa `SQL`, então no grupo de serviços clique em `SQL do Azure`.
 4. Clique em `Criar`
-5. Na escolha a opção `Banco de dados SQL` e clique em `Criar` conforme ![imagem](/images/criar-instancia-sql.png).
+5. Na escolha a opção `Banco de dados SQL` e clique em `Criar` conforme [imagem](/images/criar-instancia-sql.png).
 6. Defina:
 	- assinatura e grupo de recursos
 	- nome para o banco de dados
