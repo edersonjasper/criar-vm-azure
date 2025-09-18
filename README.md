@@ -9,13 +9,13 @@ Este item tem como objetivo descrever como criar uma máquina virtual no Azure a
 - Saber para qual necessidade será utilizado a máquina para saber dimencionar os recursos, disponibilidade e escalabilidade;
 
 ## Criar uma Máquina Virtual do Azure via Portal
-- Acesse o [portal do Azure](https://portal.azure.com/)
-- Informe seus dados de acesso.
-- No menu lateral localize e clique em `Máquinas Virtuais` conforme imagem [Menu do Azure](/images/menu.png). Obs.: o menu pode mudar com as atualizações.
-- Na próxima tela clique em `Criar` e escolha `Máquina virtual`
-- Informe os dados solicitados conforme necessidade de recursos para o projeto [detalhes de implantação](/images/detalhe.png).
-- Avance para os próximos passos para configurar discos, rede, gerenciamento e monitoramento.
-- No passo final revise e clique em `Criar` e aguarde ser provisionado.
+- Acesse o [portal do Azure](https://portal.azure.com/);
+- Informe seus dados de acesso;
+- No menu lateral localize e clique em `Máquinas Virtuais` conforme imagem [Menu do Azure](/images/menu.png). Obs.: o menu pode mudar com as atualizações;
+- Na próxima tela clique em `Criar` e escolha `Máquina virtual`;
+- Informe os dados solicitados conforme necessidade de recursos para o projeto [detalhes de implantação](/images/detalhe.png);
+- Avance para os próximos passos para configurar discos, rede, gerenciamento e monitoramento;
+- No passo final revise e clique em `Criar` e aguarde ser provisionado;
 
 # Criar Instância de Banco de dados
 
@@ -25,23 +25,49 @@ Este item tem como objetivo descrever como criar uma máquina virtual no Azure a
 
 ## Criar uma Instância do SQL do Azure via Portal
 
-1. Acesse o [portal do Azure](https://portal.azure.com/)
-2. Informe seus dados de acesso.
-3. Localize `SQL do Azure` no menu lateral esquerdo, se não estiver visivel clique em `Todos os Serviços` e digite na barra de pesquisa `SQL`, então no grupo de serviços clique em `SQL do Azure`.
-4. Clique em `Criar`
-5. Na escolha a opção `Banco de dados SQL` e clique em `Criar` conforme [imagem](/images/criar-instancia-sql.png).
+1. Acesse o [portal do Azure](https://portal.azure.com/);
+2. Informe seus dados de acesso;
+3. Localize `SQL do Azure` no menu lateral esquerdo, se não estiver visivel clique em `Todos os Serviços` e digite na barra de pesquisa `SQL`, então no grupo de serviços clique em `SQL do Azure`;
+4. Clique em `Criar`;
+5. Na escolha a opção `Banco de dados SQL` e clique em `Criar` conforme [imagem](/images/criar-instancia-sql.png);
 6. Defina:
-	- assinatura e grupo de recursos
-	- nome para o banco de dados
-	- servidor, caso não existir clique em `Criar novo` logo abaixo do campo de seleção de servidor.
-	- definir o ambiente de carga de trabalho, para os testes definir `Desenvolvimento`, para implantação oficial `Produção`.
-	- avalie em computação + armazenamento se está dimencionado de acordo com seu projeto, caso não estiver clique no link `Configurar banco de dados`.
-	- escolha a forma de backup.
-7. Clique em avançar para definir informações de rede para acesso ao banco de dados.
-8. Avance para configurar detalhes de segurança.
-9. Clique em `Revisar + criar`.
-10. Clique em `Criar`.
-11. Aguarde a implantação.
-12. Você pode alterar configurações após a implantação.
+	- assinatura e grupo de recursos;
+	- nome para o banco de dados;
+	- servidor, caso não existir clique em `Criar novo` logo abaixo do campo de seleção de servidor;
+	- definir o ambiente de carga de trabalho, para os testes definir `Desenvolvimento`, para implantação oficial `Produção`;
+	- avalie em computação + armazenamento se está dimencionado de acordo com seu projeto, caso não estiver clique no link `Configurar banco de dados`;
+	- escolha a forma de backup;
+7. Clique em avançar para definir informações de rede para acesso ao banco de dados;
+8. Avance para configurar detalhes de segurança;
+9. Clique em `Revisar + criar`;
+10. Clique em `Criar`;
+11. Aguarde a implantação;
+12. Você pode alterar configurações após a implantação;
 
+# Construindo Arquitetura no Azure
+
+- Acessar o [site](https://azure.microsoft.com/pt-br/explore/global-infrastructure) para informações oficiais referente a infraestrutura do azure;
+- A microsoft disponibiliza acesso a um globo virtual através do [site](https://datacenters.microsoft.com/globe/explore). Através do globo é possível:
+	- Visualizar geograficamente onde estão localizado os datacenters e como se comunicam;
+	- Clicando nos pontos que estão no globo apresenta informações detalhadas como:
+		- Localização;
+		- Onde fica o datacenter de replicação;
+		- Quantas zonas tem disponível;
+		- Ano de abertura;
+		- Residência dos dados, importante em caso de informações sensiveis que não podem sair do país;
+		- Dentre outras informações importantes para tomas de decisão no momento de montar a infraestrutura no Azure;
+
+## Criando Recursos no Portal
+
+1. Acesse o [portal do Azure](https://portal.azure.com/);
+2. Informe seus dados de acesso;
+3. Localize a opção `Grupos de Recursos`;
+4. Clique em `Criar`;
+5. Selecione a assinatura caso tenha mais de uma;
+6. Informe o nome;
+7. Opcionalmente pode adicionar marcações no recurso, exemplo, informar um centro de custo para facilitar no momento da fatura;
+8. Revisar e Criar, clique em `Criar`;
+
+Após criado o grupo de recurso pode ser concedido acesso através da opção `IAM (Controle de acesso)`, isso dará acesso a tudo que tiver vinculado ao grupo de recurso.
+Pode ser criado bloqueios para evitar por exemplo exclusão de recursos.
 
