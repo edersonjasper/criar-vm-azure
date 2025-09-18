@@ -71,3 +71,32 @@ Este item tem como objetivo descrever como criar uma máquina virtual no Azure a
 Após criado o grupo de recurso pode ser concedido acesso através da opção `IAM (Controle de acesso)`, isso dará acesso a tudo que tiver vinculado ao grupo de recurso.
 Pode ser criado bloqueios para evitar por exemplo exclusão de recursos.
 
+# Configurando Recursos e Dimensionamentos em Máquinas Virtuais na Azure
+
+1. Acesse o [portal do Azure](https://portal.azure.com/);
+2. Informe seus dados de acesso;
+3. Localize a opção `Máquinas Virtuais`;
+4. Clique em `Criar`;
+5. Escolha uma das opções:
+	- Tem opções já pre-definidas com recursos dimencionados;
+6. Para definir todas as informações clique na primeira opção:
+	- Definir assinatura;
+	- Grupo de recursos;
+	- Nome;
+	- Região;
+	- Opção de disponibilidade, conjunto de dimencionamento para dias de pico, exemplo black friday;
+	- Zona de disponibilidade;
+	- Tipo de segurança;
+	- Imagem (Sistema Operacional)
+	- Tamanho da máquina (vcpu, memória);
+	- Nome de usuário e senha;
+	- Porta de entrada;
+	- Avançar para definir:
+		- Discos;
+		- Rede;
+		- Gerenciamento;
+		- Monitoramento;
+		- Marcas;
+	- Revisar e Criar;
+	
+	
