@@ -111,3 +111,17 @@ Após criado a conta é possivel gerenciar os recursos para armazenamento de arq
 
 Para migração de grandes volumes é disponibilizado a opção de usar um hardware chamado Data Box onde é levado até o cliente copiado os dados e depois levado até um data center do Azure para agilizar a migração.
 Tem ferramentas para auxiliar a migração de servidores, banco de dados e aplicativos web.
+
+# Entendendo sobre Segurança e Identidade na Azure
+
+Para quem já tem um ambiente com usuários pode sincronizar com o Entra ID, serviço responsável por concentrar e gerenciar as contas de usuários.
+Não tem sincronização da nuvem com o ambiente on primese, então se criar um usuário na nuvem e não vai sincronizar.
+No Entra ID pode ser definico os usuários, grupos, regras e várias outras definições.
+Concentra um log de todos os acessos dos usuários contendo origem e IP.
+Por segurançã ao excluir um usuário ele permanece disponível para restaurar por 30 dias, porém não consegue mais logar. É apenas para caso necessite restaurar o usuário.
+Pode criar usuário pelo próprio portal um a um ou importar um CSV para enviar convite para diversos usuários.
+O serviço tem um SLA de 99,99%.
+Tendo o usuário cadastrado pode dar permissão aos recursos do azure, este permissionamento é herdavel, ou seja, se der acesso ao grupo de recurso o usuário terá acesso a todos os recursos que tiverem vinculado. Assim como pode entrar em cada recurso é dar permissão somente a ele. 
+
+O Microsoft Defender for Cloud tem toda parte de recomendação de segurança com alertas de vulnerabilidades.
+Tem o módulo DevOps Security permitindo conectar contas como do github para monitoramento. Também permite monitorar contas de outras clouds como AWS e GCP, tendo tudo em um único painel.
