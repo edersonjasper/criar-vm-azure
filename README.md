@@ -131,3 +131,7 @@ Tem o módulo DevOps Security permitindo conectar contas como do github para mon
 O Azure disponibiliza uma calculadora para poder ter uma estimativa do custo que terá ao migrar ou começar a usar o Azure. Está disponível no endereço (https://azure.microsoft.com/pt-br/pricing/calculator/)[https://azure.microsoft.com/pt-br/pricing/calculator/]
 Na calculadora pode definir todos os recursos que serão necessários como VMs, banco de dados, discos, rede, licenças dentre outros, definir localização geográfica que será alocado os recursos e com base nessas informações sera apresentado um valor estimado.
 Ao final da simulação é possível exportar um relatório para passar para outras pessoas avaliarem.
+
+Através do portal tem a opção de gerenciamento de custos para saber quando cada recurso está consumindo. 
+Ele da recomendações e alertas de custo para poder otimizar. Configurar para enviar alertas por e-mail. 
+Pode definir budgets para ele não ultrapassar um determinado valor. 
