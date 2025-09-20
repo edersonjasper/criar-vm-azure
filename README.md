@@ -125,3 +125,9 @@ Tendo o usuário cadastrado pode dar permissão aos recursos do azure, este perm
 
 O Microsoft Defender for Cloud tem toda parte de recomendação de segurança com alertas de vulnerabilidades.
 Tem o módulo DevOps Security permitindo conectar contas como do github para monitoramento. Também permite monitorar contas de outras clouds como AWS e GCP, tendo tudo em um único painel.
+
+# Otimizando Custos no Azure
+
+O Azure disponibiliza uma calculadora para poder ter uma estimativa do custo que terá ao migrar ou começar a usar o Azure. Está disponível no endereço (https://azure.microsoft.com/pt-br/pricing/calculator/)[https://azure.microsoft.com/pt-br/pricing/calculator/]
+Na calculadora pode definir todos os recursos que serão necessários como VMs, banco de dados, discos, rede, licenças dentre outros, definir localização geográfica que será alocado os recursos e com base nessas informações sera apresentado um valor estimado.
+Ao final da simulação é possível exportar um relatório para passar para outras pessoas avaliarem.
