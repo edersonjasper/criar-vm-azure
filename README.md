@@ -99,4 +99,15 @@ Pode ser criado bloqueios para evitar por exemplo exclusão de recursos.
 		- Marcas;
 	- Revisar e Criar;
 	
-	
+# Dominando o Armazenamento na Azure
+
+O Azure disponiviliza armazenamento em arquivos podendo ser mapeado como unidade de rede para compartilhamento, Blob, tabelas (chave/valor) e fila de mensagens.
+Pode ser armazenado todo tipo de arquivo. Para o Blob pode escolher qual nivel de acesso que terá o arquivo no futuro e com base nisso varia o preço.
+
+Para criar uma conta deve-se selecionar a assinatura, o grupo de recursos, definir o nome, o nome deve ser unico mundialmente, pois através desse nome será montado o endereço para acessar os arquivos, blobs, ETC..
+Definir desempenho e qual modelo de redundância.
+
+Após criado a conta é possivel gerenciar os recursos para armazenamento de arquivo, blob, filas e tabelas.
+
+Para migração de grandes volumes é disponibilizado a opção de usar um hardware chamado Data Box onde é levado até o cliente copiado os dados e depois levado até um data center do Azure para agilizar a migração.
+Tem ferramentas para auxiliar a migração de servidores, banco de dados e aplicativos web.
