@@ -164,3 +164,13 @@ Este recurso facilita a padronização e criação em massa de recursos. Uma op�
 Tem também a opção de baixar o template em JSON ARM, contendo todo o script e você pode alterar somente os parametros, exemplo o nome do recurso. Uma linguagem desenvolvida para automatizar a criação de recursos é o Bicep, que em relação ao JSON ARM reduz código necessário para criação de recursos. Através do projeto [Bicep](https://azure.github.io/bicep/) do github, pode selecionar o recurso e ter um comparativo do código necessário.
 
 Com a ferramenta Arc podemos gerenciar recursos de outras nuvens (AWS, GCP). Traz uma séria de recursos para centralizar a gestão de dos recursos em apenas um local.
+
+# Monitoramento Inteligente com o Azure
+
+No menu esquerdo do portal podemos localizar o Monitor e Advisor.
+O monitoramento é um ponto importante em qualquer ambiente para sabermos o que está acontecendo com os recursos, dentro Azure tem diversas ferramentas para poder monitorar o ambiente.
+Com o Monitor podemos fazer a validação, acompanhar os alertas, métricas e logs para saber se o ambiente está saúdavel e seguro.
+
+O Service Health apresenta as localizações do Azure e se alguma delas está sofrendo com algum ataque o sem tem algum problema. Quando identificar alguma anomalidade no recurso utilizado, é importante acessar o Service Health para tomar conhecimento se o problema pode estar relacionado a infra do Azure ou as aplicações hospedadas.
+
+O Advisor é o centro de recomendações, ele apresenta informações de custo, segurança, excelência operacional, dentre outras.
