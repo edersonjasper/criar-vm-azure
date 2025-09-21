@@ -152,3 +152,15 @@ Dentro o Purview tem um módulo trabalhando em conjunto com o Microsoft 365 para
 As politicas são aplicadas são aplicadas a nível de grupo de gerenciamento, a nível de assinatura, a nível de grupo de recurso. Ela é aplicada a todos, inclusivel a quem criou.
 É possível acompanhar se todos os recursos estão dentro da politica, uma vez criado a politica ela não permite mais criar recursos que não atenda a politica, porem se a politica é aplicada após já ter recursos criados ela apresenta o que não está atendendo ela.
 Por exemplo, podemos definir uma politica onde restringe as localizações que pode ser criado os recursos.
+
+# Ferramentas de Implantação na Azure
+
+Uma das opções para criação de recursos para implantação é manual através do portal seguindo os passos indicados.
+Para criar recursos de forma automatizada temos CloudShell também disponível no portal, porém é executado através de linhas de comando. Quando clicado no botão para acessar o shell ele já loga na assinatura, é necessário ter com conta de armazenamento, caso não tiver ele vai indicar para criar.
+Ele já abre como PowerShell, mas conforme preferência do usuário pode ser trocado por Bash.
+
+Este recurso facilita a padronização e criação em massa de recursos. Uma opção para obter os comandos é acessar recursos já criados e ir na opção de CLI/PS, será apresentado os comandos a serem executados no shell para criar o recurso.
+
+Tem também a opção de baixar o template em JSON ARM, contendo todo o script e você pode alterar somente os parametros, exemplo o nome do recurso. Uma linguagem desenvolvida para automatizar a criação de recursos é o Bicep, que em relação ao JSON ARM reduz código necessário para criação de recursos. Através do projeto [Bicep](https://azure.github.io/bicep/) do github, pode selecionar o recurso e ter um comparativo do código necessário.
+
+Com a ferramenta Arc podemos gerenciar recursos de outras nuvens (AWS, GCP). Traz uma séria de recursos para centralizar a gestão de dos recursos em apenas um local.
