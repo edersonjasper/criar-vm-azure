@@ -128,10 +128,27 @@ Tem o módulo DevOps Security permitindo conectar contas como do github para mon
 
 # Otimizando Custos no Azure
 
-O Azure disponibiliza uma calculadora para poder ter uma estimativa do custo que terá ao migrar ou começar a usar o Azure. Está disponível no endereço (https://azure.microsoft.com/pt-br/pricing/calculator/)[https://azure.microsoft.com/pt-br/pricing/calculator/]
+O Azure disponibiliza uma calculadora para poder ter uma estimativa do custo que terá ao migrar ou começar a usar o Azure. Está disponível no endereço [https://azure.microsoft.com/pt-br/pricing/calculator/](https://azure.microsoft.com/pt-br/pricing/calculator/)
 Na calculadora pode definir todos os recursos que serão necessários como VMs, banco de dados, discos, rede, licenças dentre outros, definir localização geográfica que será alocado os recursos e com base nessas informações sera apresentado um valor estimado.
 Ao final da simulação é possível exportar um relatório para passar para outras pessoas avaliarem.
 
 Através do portal tem a opção de gerenciamento de custos para saber quando cada recurso está consumindo. 
 Ele da recomendações e alertas de custo para poder otimizar. Configurar para enviar alertas por e-mail. 
 Pode definir budgets para ele não ultrapassar um determinado valor. 
+
+# Gerenciando Politicas em Acessos Azure
+
+A Microsft disponibiliza o [site](https://servicetrust.microsoft.com/) contendo as certificações, regulamentos e padrões em relação a proteção dos dados. 
+
+Via portal é possível definir os bloqueios para os recursos, exemplo bloqueio para não pode realizar exclusão de recursos. Este bloqueio é herdavel, se aplicar ao grupo de recursos é aplicado a todos os recursos vinculados.
+Esse ponto é muito útil para os usuários que tem somente acesso ao recurso não consiga fazer exclusões indevidas. Para fazer a exclusão é necessário remover o bloqueio do grupo de recursos.
+Exemplo se quiser excluir uma v-net que está em um grupo de recursos com bloqueio de exclusão, o usuário pode mover a v-net para um outro grupo de recursos e realizar a exclusão porque a definição está no grupo de recursos, ela não vai junto com a movimentação. Caso a definição esteja no recurso (v-net) ele vai junto com a movimentação.
+
+O Microsoft Purview compreende a seguraça dos dados, governança e complice para todas as suas informações, é como se fosse uma suíte de aplicações compreendendo Microsoft 365, Microsoft Azure, Microsoft Fabric e outras plataformas de nuvem.
+
+O Microsoft Priva auxilia a adequar as empresas no Brasil a LGPD, dizendo aonde não está atendendo os requisitos.
+Dentro o Purview tem um módulo trabalhando em conjunto com o Microsoft 365 para coleta de dados e verificação.
+
+As politicas são aplicadas são aplicadas a nível de grupo de gerenciamento, a nível de assinatura, a nível de grupo de recurso. Ela é aplicada a todos, inclusivel a quem criou.
+É possível acompanhar se todos os recursos estão dentro da politica, uma vez criado a politica ela não permite mais criar recursos que não atenda a politica, porem se a politica é aplicada após já ter recursos criados ela apresenta o que não está atendendo ela.
+Por exemplo, podemos definir uma politica onde restringe as localizações que pode ser criado os recursos.
